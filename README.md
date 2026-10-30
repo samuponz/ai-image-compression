@@ -31,7 +31,7 @@ With λ = 100 the codes drop to about 10 bits per image and the reconstructions 
 
 ![Cats compressed with lambda 100](toy_examples/outputs/cats_lambda100.png)
 
-Digits generated from the learned prior of the MNIST model:
+Since the model learns a prior over the latent space, it can also be used as a generative model: sampling latents from the prior and passing them through the synthesis transform (the decoder) produces new digits.
 
 <img src="images/digitgen.png" alt="Digits generated from the learned prior" width="320">
 
