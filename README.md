@@ -18,8 +18,7 @@ The project studies **End-to-end Optimized Image Compression** (Ballé, Laparra 
 
 ### `toy_examples/`: a small compression model
 Based on the TensorFlow [Learned data compression](https://www.tensorflow.org/tutorials/generative/data_compression) tutorial:
-- Trained a small compression model on MNIST with different values of λ.
-- Tested it on cat images (CIFAR-10 and a cat/non-cat dataset).
+- Trained small compression models on MNIST and on cat images (CIFAR-10 and a cat/non-cat dataset) with different values of λ.
 - Generated new samples by decoding latents drawn from the learned prior.
 
 The cat/non-cat `.h5` dataset is not included.
