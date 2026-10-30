@@ -1,0 +1,7 @@
+__pycache__/
+.vscode/
+.ipynb_checkpoints/
+*.tfci
+*.h5
+*.data
+models/
