@@ -24,13 +24,17 @@ Based on the TensorFlow [Learned data compression](https://www.tensorflow.org/tu
 
 The cat/non-cat `.h5` dataset is not included.
 
-Cat images compressed with the model trained on cats. Each triplet shows the original, the compressed code with its size in bits, and the reconstruction.
+Cat images compressed with the model trained on cats. Each triplet shows the original, the compressed code with its size in bits, and the reconstruction. The model works on 28×28 grayscale images.
 
-| λ = 2000 (about 35 bits per image) | λ = 100 (about 10 bits per image) |
-|---|---|
-| ![Cats compressed with lambda 2000](toy_examples/outputs/cats_lambda2000.png) | ![Cats compressed with lambda 100](toy_examples/outputs/cats_lambda100.png) |
+![Cats compressed and reconstructed](images/cats_color.png)
 
-![Digits generated from the learned prior](images/digitgen.png)
+With λ = 100 the codes drop to about 10 bits per image and the reconstructions lose most of the detail.
+
+![Cats compressed with lambda 100](toy_examples/outputs/cats_lambda100.png)
+
+Digits generated from the learned prior of the MNIST model:
+
+<img src="images/digitgen.png" alt="Digits generated from the learned prior" width="320">
 
 ### `presentation/`
 Slides presented for the exam.
